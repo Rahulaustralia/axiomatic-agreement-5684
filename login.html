@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: #0f0617;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #loginpage {
+            width: 30%;
+            margin: auto;
+        }
+        
+        #loginpage h3 {
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        #loginpage p {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: small;
+        }
+        
+        #icon {
+            width: 53%;
+            margin: auto;
+        }
+        
+        .fa {
+            padding: 3px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+        
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        
+        .fa-android {
+            background: #a4c639;
+            color: white;
+        }
+        
+        #mid {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .txt_field {
+            position: relative;
+            border-bottom: 2px solid #adadad;
+            margin: 30px 0;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .txt_field>input {
+            width: 100%;
+            padding: 0 5px;
+            height: 40px;
+            font-size: 16px;
+            border: none;
+            background: none;
+            outline: none;
+            font-weight: bold;
+            color: white;
+        }
+        
+        label {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            color: #adadad;
+            transform: translateY(-50%);
+            font-size: 10px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        
+        .txt_field>span::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: gray;
+            transition: .5s;
+        }
+        
+        .txt_field>input:focus~label,
+        .txt_field>input:valid~label {
+            top: -5px;
+            color: gray;
+        }
+        
+        .txt_field>input:focus~span::before,
+        .txt_field>input:valid~span::before {
+            width: 100%;
+        }
+        
+        #forgot {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        #forgot a {
+            color: #8230c6;
+            text-decoration: none;
+            font-size: small;
+        }
+        
+        button {
+            width: 100%;
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 7px;
+        }
+        
+        #end a {
+            color: #8230c6;
+            text-decoration: none;
+        }
+        
+        #end p {
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loginpage">
+        <div>
+            <h3>Login to ZEE5</h3>
+        </div>
+        <div>
+            <p>Login to continue enjoying uninterrupted video and personalised experience.</p>
+        </div>
+        <div id="icon">
+            <a href="https://appleid.apple.com/auth/authorize?client_id=com.zee5.pwa&redirect_uri=https%3A%2F%2Fwww.zee5.com&response_type=code%20id_token&state=origin%3Aweb&scope=name%20email&response_mode=web_message&frame_id=20471480-357b-4043-92ed-14bdae0a66f0&m=11&v=1.5.4"
+                class="fa fa-android"></a>
+            <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.zee5.com%3Fid%3Dauth220595&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=171585693881-93jei1bqpoaejkq5ha63iemuq8bbmoar.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.zee5.com&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow"
+                class="fa fa-google"></a>
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=771609066382248&kid_directed_site=0&app_id=771609066382248&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.10%2Fdialog%2Foauth%3Fapp_id%3D771609066382248%26cbt%3D1658319678191%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df1362a68ede2e3%2526domain%253Dwww.zee5.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.zee5.com%25252Ff1ac9a8facc80b%2526relation%253Dopener%26client_id%3D771609066382248%26display%3Dpopup%26domain%3Dwww.zee5.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.zee5.com%252Fsignin%26locale%3Den_US%26logger_id%3Df114fe100a1ffdc%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df3f20241191b914%2526domain%253Dwww.zee5.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.zee5.com%25252Ff1ac9a8facc80b%2526relation%253Dopener%2526frame%253Df37b81402699bac%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26sdk%3Djoey%26version%3Dv2.10%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3f20241191b914%26domain%3Dwww.zee5.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.zee5.com%252Ff1ac9a8facc80b%26relation%3Dopener%26frame%3Df37b81402699bac%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_GB&pl_dbl=0"
+                class="fa fa-facebook"></a>
+            <a href="https://api.twitter.com/oauth/authenticate?oauth_token=q_7o-wAAAAAA2CPSAAABghuOmlc&force_login=false" class="fa fa-twitter"></a>
+        </div>
+        <div id="mid">
+            <p>or</p>
+        </div>
+        <div class="txt_field">
+            <input type="text" required />
+            <span></span>
+            <label>Email ID Or Mobile Number</label>
+        </div>
+        <div id="forgot">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div id="btn">
+            <button> Login </button>
+        </div><br>
+        <div id="end">
+            <p>New to ZEE5 ? <a href="signup.html">Register</a> </p>
+        </div>
+    </div>
+</body>
+
+</html>
