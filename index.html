@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f0617;
+        }
+        
+        #navbar {
+            display: flex;
+            background-color: #0f0617;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0px;
+            padding: 13px;
+        }
+        
+        #left {
+            display: flex;
+            justify-content: space-between;
+            width: 35%;
+            align-items: center;
+            margin: auto;
+        }
+        
+        #left>img {
+            width: 45px;
+        }
+        
+        #left>a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        #right {
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+            margin: auto;
+        }
+        
+        input[type="text"] {
+            width: 250px;
+            height: 38px;
+            padding: 0px 4px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 8px;
+            color: white;
+        }
+        
+        #right button {
+            width: 120px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        
+        input+button+button {
+            background-color: #8230c6;
+            font-weight: bold;
+            color: white;
+        }
+        
+        input+button {
+            background-color: #0f0617;
+            color: white;
+            border: 1px solid white;
+        }
+        
+        .line>div {
+            width: 25px;
+            height: 4px;
+            background-color: white;
+            margin: 6px 0;
+        }
+        
+        .line {
+            padding-top: 7px;
+        }
+        
+        #image {
+            width: 100%;
+            height: 50px;
+        }
+        
+        #image img {
+            width: 100%;
+            margin-top: 70px;
+            height: 300px;
+        }
+        
+        #section {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            margin: auto;
+            margin-top: 340px;
+        }
+        
+        #section img {
+            width: 170px;
+            height: 250px;
+            padding: 0px 5px;
+        }
+        
+        #section div:hover {
+            border: 5px solid white;
+            background-color: white;
+        }
+        
+        #section div img:hover {
+            width: 230px;
+            background-color: white;
+        }
+        
+        #col i {
+            color: white;
+        }
+        
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="left">
+            <img src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.51.77" alt="error">
+            <a href="">Home</a>
+            <a href="">TV Shows</a>
+            <a href="">Movies</a>
+            <a href="">Web Series</a>
+            <a href="">News</a>
+            <div id="col"> <i class="fa-solid fa-grip-dots-vertical"></i></div>
+        </div>
+        <div id="right">
+            <input type="text" placeholder="Search for Movies,Shows,Channels etc.">
+            <button> <a href="login.html">LOGIN </a>  </button>
+            <button> BUY PLAN </button>
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="image">
+        <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5168144/cover/1920x770d20ddc9eac304f87b1a960754cada35a.jpg" alt="error">
+    </div>
+
+    <div id="section">
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5177236/portrait/1920x770a15117f9511c451683c2650c5ad00b33.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172328/portrait/1920x77099166e40dc2b444883895c9363cc4383c9e1115d92704a09bf4f608ec941679f.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5181112/portrait/1920x7708502c7d44df94abb8df571634ddeff55.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172356/portrait/1920x7705a2073dc89d04da2926dbcd3886785aaa974ce344e704cabb3b0556de80eaa7b.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5149852/portrait/1920x7708760d4e6a1c8429cbfea6f1e4a375f6d25ac3d74d6544bc89704d6475e368c79.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5168144/portrait/1920x770d20ddc9eac304f87b1a960754cada35a.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5177236/portrait/1920x770a15117f9511c451683c2650c5ad00b33.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172328/portrait/1920x77099166e40dc2b444883895c9363cc4383c9e1115d92704a09bf4f608ec941679f.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5181112/portrait/1920x7708502c7d44df94abb8df571634ddeff55.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172356/portrait/1920x7705a2073dc89d04da2926dbcd3886785aaa974ce344e704cabb3b0556de80eaa7b.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5149852/portrait/1920x7708760d4e6a1c8429cbfea6f1e4a375f6d25ac3d74d6544bc89704d6475e368c79.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5168144/portrait/1920x770d20ddc9eac304f87b1a960754cada35a.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5177236/portrait/1920x770a15117f9511c451683c2650c5ad00b33.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172328/portrait/1920x77099166e40dc2b444883895c9363cc4383c9e1115d92704a09bf4f608ec941679f.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5181112/portrait/1920x7708502c7d44df94abb8df571634ddeff55.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172356/portrait/1920x7705a2073dc89d04da2926dbcd3886785aaa974ce344e704cabb3b0556de80eaa7b.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5149852/portrait/1920x7708760d4e6a1c8429cbfea6f1e4a375f6d25ac3d74d6544bc89704d6475e368c79.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5168144/portrait/1920x770d20ddc9eac304f87b1a960754cada35a.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5177236/portrait/1920x770a15117f9511c451683c2650c5ad00b33.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172328/portrait/1920x77099166e40dc2b444883895c9363cc4383c9e1115d92704a09bf4f608ec941679f.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5181112/portrait/1920x7708502c7d44df94abb8df571634ddeff55.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172356/portrait/1920x7705a2073dc89d04da2926dbcd3886785aaa974ce344e704cabb3b0556de80eaa7b.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5149852/portrait/1920x7708760d4e6a1c8429cbfea6f1e4a375f6d25ac3d74d6544bc89704d6475e368c79.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5168144/portrait/1920x770d20ddc9eac304f87b1a960754cada35a.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5177236/portrait/1920x770a15117f9511c451683c2650c5ad00b33.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172328/portrait/1920x77099166e40dc2b444883895c9363cc4383c9e1115d92704a09bf4f608ec941679f.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5181112/portrait/1920x7708502c7d44df94abb8df571634ddeff55.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5172356/portrait/1920x7705a2073dc89d04da2926dbcd3886785aaa974ce344e704cabb3b0556de80eaa7b.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5149852/portrait/1920x7708760d4e6a1c8429cbfea6f1e4a375f6d25ac3d74d6544bc89704d6475e368c79.jpg" alt="error"> </div>
+        <div> <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-1z5168144/portrait/1920x770d20ddc9eac304f87b1a960754cada35a.jpg" alt="error"> </div>
+
+    </div>
+
+</body>
+
+
+</html>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
