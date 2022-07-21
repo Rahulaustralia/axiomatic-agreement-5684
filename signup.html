@@ -6,162 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="signup.css">
     <title>Document</title>
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            background-color: #0f0617;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        #signuppage {
-            width: 25%;
-            margin: auto;
-        }
-        
-        #signuppage h3 {
-            color: white;
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        #signuppage p {
-            color: white;
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: small;
-        }
-        
-        #icon {
-            width: 53%;
-            margin: auto;
-        }
-        
-        .fa {
-            padding: 3px;
-            font-size: 15px;
-            width: 20px;
-            text-align: center;
-            text-decoration: none;
-            margin: 5px 2px;
-            border-radius: 50%;
-        }
-        
-        .fa-google {
-            background: #dd4b39;
-            color: white;
-        }
-        
-        #mid {
-            text-align: center;
-            color: white;
-            width: 40px;
-            margin: auto;
-            margin-bottom: 20px;
-        }
-        
-        #mid p {
-            background-color: #450948;
-            border-radius: 50%;
-            height: 30px;
-            padding-top: 10px;
-        }
-        
-        .txt_field {
-            position: relative;
-            border-bottom: 2px solid #adadad;
-            margin: 30px 0;
-            font-weight: bold;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        
-        .txt_field>input {
-            width: 100%;
-            padding: 0 5px;
-            height: 40px;
-            font-size: 16px;
-            border: none;
-            background: none;
-            outline: none;
-            font-weight: bold;
-            color: white;
-        }
-        
-        label {
-            position: absolute;
-            top: 50%;
-            left: 5px;
-            color: #adadad;
-            transform: translateY(-50%);
-            font-size: 10px;
-            pointer-events: none;
-            transition: .5s;
-        }
-        
-        .txt_field>span::before {
-            content: '';
-            position: absolute;
-            top: 40px;
-            left: 0;
-            width: 0%;
-            height: 2px;
-            background: gray;
-            transition: .5s;
-        }
-        
-        .txt_field>input:focus~label,
-        .txt_field>input:valid~label {
-            top: -5px;
-            color: gray;
-        }
-        
-        .txt_field>input:focus~span::before,
-        .txt_field>input:valid~span::before {
-            width: 100%;
-        }
-        
-        #para {
-            margin-bottom: 25px;
-        }
-        
-        #para a {
-            color: #8230c6;
-            text-decoration: none;
-            font-size: small;
-        }
-        
-        #para p {
-            text-align: left;
-            line-height: 20px;
-        }
-        
-        button {
-            width: 100%;
-            color: #8230c6;
-            background-color: white;
-            padding: 10px;
-            border-radius: 7px;
-        }
-        
-        #end a {
-            color: #8230c6;
-            text-decoration: none;
-        }
-        
-        #end p {
-            font-size: small;
-        }
-        
-        #btn2 button {
-            width: 100%;
-            color: white;
-            background-color: transparent;
-            padding: 10px;
-            border: 1px solid white;
-            border-radius: 7px;
-        }
+
     </style>
 </head>
 
@@ -174,7 +22,7 @@
             <p>Create an account to continue enjoying uninterrupted video and personalised experience </p>
         </div>
         <div id="btn">
-            <button onclick="function()">  <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.zee5.com%3Fid%3Dauth220595&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=171585693881-93jei1bqpoaejkq5ha63iemuq8bbmoar.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.zee5.com&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow" class="fa fa-google"></a> Sign in </button>
+            <button>  <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.zee5.com%3Fid%3Dauth220595&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=171585693881-93jei1bqpoaejkq5ha63iemuq8bbmoar.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.zee5.com&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow" class="fa fa-google"></a> Sign in </button>
         </div>
 
         <div id="mid">
@@ -185,13 +33,19 @@
             <span></span>
             <label>Mobile Number</label>
         </div>
+        <div class="txt_field">
+            <input id="Pass" type="text" required />
+            <span></span>
+            <label>Password</label>
+        </div>
         <div id="para">
             <p>By proceeding you agree to our <a href="#">Terms of Services</a> & <a href="#">Privacy Policy.</a></p>
         </div>
 
         <div id="btn2">
-            <button onclick="function()">Send OTP</button>
+            <button>Send OTP</button>
         </div>
+
 
         <div id="end">
             <p> Already registered? <a href="login.html">Login</a> </p>
@@ -201,6 +55,5 @@
 </body>
 
 </html>
-<script>
-    let data = document.getElementById("MNumber")
+<script src="signup.js">
 </script>
