@@ -213,29 +213,23 @@
             password: document.querySelector("#userpass").value,
         }
 
-
-        // if (loginLS.length === 0) {
-        //     alert("No user till now");
-        //     return;
-        // }
-
-
         loginLS.push(newobj)
         localStorage.setItem("loginData", JSON.stringify(loginLS))
 
         let flag = false;
         loginLS.forEach(function(ele) {
-            if (ele.number === obj.number && ele.password === obj.password) {
+            if (ele.number === newobj.number && ele.password === newobj.password) {
                 flag = true;
                 localStorage.setItem("login", JSON.stringify(ele));
                 alert("Signup Sucessfully");
                 window.location.href = "index.html";
 
             }
-            if (flag == false) {
-                alert("User Doesnot Exist");
-            }
+
         });
+        if (flag == false) {
+            alert("User Doesnot Exist");
+        }
 
     }
 </script>
