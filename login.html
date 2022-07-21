@@ -179,9 +179,14 @@
             <p>or</p>
         </div>
         <div class="txt_field">
-            <input type="text" required />
+            <input id="userid" type="text" required />
             <span></span>
             <label>Email ID Or Mobile Number</label>
+        </div>
+        <div class="txt_field">
+            <input id="userpass" type="password" required />
+            <span></span>
+            <label>Password</label>
         </div>
         <div id="forgot">
             <a href="#">Forgot Password?</a>
@@ -196,3 +201,41 @@
 </body>
 
 </html>
+<script>
+    document.querySelector("#btn button").addEventListener("click", loginFunc)
+
+    let loginLS = JSON.parse(localStorage.getItem("loginData")) || [];
+
+    function loginFunc() {
+        event.preventDefault();
+        let newobj = {
+            number: document.querySelector("#userid").value,
+            password: document.querySelector("#userpass").value,
+        }
+
+
+        // if (loginLS.length === 0) {
+        //     alert("No user till now");
+        //     return;
+        // }
+
+
+        loginLS.push(newobj)
+        localStorage.setItem("loginData", JSON.stringify(loginLS))
+
+        let flag = false;
+        loginLS.forEach(function(ele) {
+            if (ele.number === obj.number && ele.password === obj.password) {
+                flag = true;
+                localStorage.setItem("login", JSON.stringify(ele));
+                alert("Signup Sucessfully");
+                window.location.href = "index.html";
+
+            }
+            if (flag == false) {
+                alert("User Doesnot Exist");
+            }
+        });
+
+    }
+</script>
