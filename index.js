@@ -28,240 +28,169 @@ leftbtn.addEventListener("click", function() {
     crauser.src = imglink[imgstate];
 })
 
-let dataTVshow = [{
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-429/list/06429list582600782.jpg",
-        url: "https://www.zee5.com/tv-shows/details/1224-karol-bagh/0-6-429"
+let Data = [{
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-0-1z5177236/portrait/1920x77031ed2446062f4a528272aeb1989b923d.jpg",
+        url: "https://www.zee5.com/global/movies/details/janhit-mein-jaari/0-0-1z5177236"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-tvshow_1591012925/list/06tvshow1591012925list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/aap-ke-aa-jane-se/0-6-tvshow_1591012925"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-6-4z5172328/portrait/1920x77024a217a8ed9f465eb6a2e48d980d1b6d.jpg",
+        url: "https://www.zee5.com/global/web-series/details/maa-neella-tank/0-6-4z5172328"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1788/list/061788list1833e258b9f4490198a1ad7041d7f25d.jpg",
-        url: "https://www.zee5.com/tv-shows/details/aghori/0-6-1788"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-0-1z5181112/portrait/1920x770d52ddfe3dd874dea9613b3fb70b11b20.jpg",
+        url: "https://www.zee5.com/global/movies/details/veetla-vishesham/0-0-1z5181112"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-207/list/aglejanam1170x61331393784.jpg",
-        url: "https://www.zee5.com/tv-shows/details/agle-janam-mohe-bitiya-hi-kijo/0-6-207"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-0-1z5178627/portrait/1920x7708a56614e99064e63a5bd1fc85c8cab2c.jpg",
+        url: "https://www.zee5.com/global/movies/details/kunjeldho/0-0-1z5178627"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2199/list/1170x65873587128.jpg",
-        url: "https://www.zee5.com/tv-shows/details/antarshakti/0-6-2199"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-0-1z5184500/portrait/nodiswamyivanuirodeheegepfp1ag1920x770070720220c170e1d5b844cbba5fa2067ece6afb3.jpg",
+        url: "https://www.zee5.com/global/movies/details/nodi-swamy-ivanu-irode-heege/0-0-1z5184500"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-3008/list/063008list140032629714003262690aeb2a8afc4a578071cfec0a4a0f2f.jpg",
-        url: "https://www.zee5.com/tv-shows/details/apna-time-bhi-aayega/0-6-3008"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-0-1z5181170/portrait/kolkatarharrypfp1ag1920x77030062022343a73cafee7440fbeed5eea0ed0f260.jpg",
+        url: "https://www.zee5.com/global/movies/details/kolkatar-harry/0-0-1z5181170"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-3006/list/063006list1448002862.jpg",
-        url: "https://www.zee5.com/tv-shows/details/brahmarakshas-2/0-6-3006"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-6-4z5172356/portrait/1920x770c090f8b1c2e14cafb5afc76742291e7f.jpg",
+        url: "https://www.zee5.com/global/web-series/details/saas-bahu-achaar-pvt-ltd/0-6-4z5172356"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1202/list/061202list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/daayan/0-6-1202"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-6-3392/portrait/1920x770510f9f70fced431b90c14a4c862e0fa0.jpg",
+        url: "https://www.zee5.com/global/tv-shows/details/bhagya-lakshmi/0-6-3392"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1789/list/061789list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/dance-india-dance-battle-of-the-champions/0-6-1789"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-6-3121/portrait/1920x7707b7a03b379e64d3d92272fc4da4475af.jpg",
+        url: "https://www.zee5.com/global/tv-shows/details/mithai/0-6-3121"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2160/list/062160list376093138.jpg",
-        url: "https://www.zee5.com/tv-shows/details/dil-yeh-ziddi-hai/0-6-2160"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-6-447/portrait/1920x770d0c395d09e244a7998dc5ab851447be4.jpg",
+        url: "https://www.zee5.com/global/tv-shows/details/jodha-akbar/0-6-447"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1948/list/061948list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/dilli-darlings/0-6-1948"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-6-4z587365/portrait/1920x770b44896d2b6254d4b861a5f83b73662d3.jpg",
+        url: "https://www.zee5.com/global/tv-shows/details/tu-tevha-tashi/0-6-4z587365"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-621/list/06621list451556529.jpg",
-        url: "https://www.zee5.com/tv-shows/details/fear-files-darr-ki-sacchi-tasveerin/0-6-621"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-6-4z590912/portrait/1920x770ee688d8229674d04bf9882d78b8db07a593964145abe40b88d6043837c6c3b44.jpg",
+        url: "https://www.zee5.com/global/tv-shows/details/sa-re-ga-ma-pa-the-singing-superstar/0-6-4z590912"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-319/list/06319list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/ghar-ki-lakshmi-betiyann/0-6-319"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-6-4z5130241/portrait/1920x770654d26f77a884557af4d789057232da9.jpg",
+        url: "https://www.zee5.com/global/tv-shows/details/pyar-ka-pehla-naam-radha-mohan/0-6-4z5130241"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-tvshow_1603815665/list/06tvshow1603815807290189.jpg",
-        url: "https://www.zee5.com/tv-shows/details/guddan-tumse-na-ho-payega/0-6-tvshow_1603815665"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-6-366/portrait/1920x770c4431f058b7e41d184655edac7739655.jpg",
+        url: "https://www.zee5.com/global/tv-shows/details/kundali-bhagya/0-6-366"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2876/list/062876list2130223622.jpg",
-        url: "https://www.zee5.com/web-series/details/guddan-tumse-na-ho-payega-ghar-se/0-6-2876"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-0-1z5177236/portrait/1920x77031ed2446062f4a528272aeb1989b923d.jpg",
+        url: "https://www.zee5.com/global/movies/details/janhit-mein-jaari/0-0-1z5177236"
     },
     {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2034/list/062034list1752681328.jpg",
-        url: "https://www.zee5.com/tv-shows/details/gudiya-humari-sabhi-pe-bhari/0-6-2034"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1917/list/061917list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/haiwaan/0-6-1917"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1737/list/061737list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/hamari-bahu-silk/0-6-1737"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-3007/list/063007list1530240497.jpg",
-        url: "https://www.zee5.com/tv-shows/details/hamariwali-good-news/0-6-3007"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-31/list/huddkardi1170x658.jpg",
-        url: "https://www.zee5.com/tv-shows/details/hudd-kar-di/0-6-31"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-3126/list/063126list1084774169.jpg",
-        url: "https://www.zee5.com/tv-shows/details/indian-pro-music-league/0-6-3126"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-tvshow_691077998/list/06tvshow691077998list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/ishq-subhan-allah/0-6-tvshow_691077998"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-447/list/1170x658withlogo448cd112cfa84f61ba2c14b722e24a81.jpg",
-        url: "https://www.zee5.com/tv-shows/details/jodha-akbar/0-6-447"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2583/list/062583list1570554584.jpg",
-        url: "https://www.zee5.com/tv-shows/details/kyun-rishton-mein-katti-batti/0-6-2583"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1964/list/lagaoboli1170x6588d02449dddab48acb84b7bdd038fbca6.jpg",
-        url: "https://www.zee5.com/tv-shows/details/lagao-boli/0-6-1964"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-3331/list/1170x658withlogo710028711.jpg",
-        url: "https://www.zee5.com/tv-shows/details/mahabharat/0-6-3331"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1248/list/061248list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/main-bhi-ardhangini/0-6-1248"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1171_1688491931/list/0611711688491931list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/manmohini/0-6-1171_1688491931"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2469/list/1170x658withlog2028505432.jpg",
-        url: "https://www.zee5.com/tv-shows/details/mind-wars/0-6-2469"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2116/list/062116list997443115.jpg",
-        url: "https://www.zee5.com/tv-shows/details/movie-masti-with-maniesh-paul/0-6-2116"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2143/list/1170x6581090233784.jpg",
-        url: "https://www.zee5.com/tv-shows/details/not-just-supper-stars/0-6-2143"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-133/list/1170x658withlogoede57347d465450d958bb888519c5202c8fa8cc47d234dbda1bebf9785da7771.jpg",
-        url: "https://www.zee5.com/tv-shows/details/pavitra-rishta/0-6-133"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-3077/list/063077list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/pyaar-tune-kya-kiya-season-11/0-6-3077"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2501/list/062501list1408561387.jpg",
-        url: "https://www.zee5.com/tv-shows/details/qurbaan-hua/0-6-2501"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1240/list/061240list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/rajaa-betaa/0-6-1240"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2989/list/062989list2008672445.jpg",
-        url: "https://www.zee5.com/tv-shows/details/ram-pyaare-sirf-hamare/0-6-2989"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2581/list/1170x658withlogo499368161.jpg",
-        url: "https://www.zee5.com/tv-shows/details/rang-malang/0-6-2581"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-3522/list/1170x658withlogobb7dc0e9db87458bb66e2b58886b5ccd.jpg",
-        url: "https://www.zee5.com/tv-shows/details/rishton-ka-manjha/0-6-3522"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2023/list/rhbs31170x658.jpg",
-        url: "https://www.zee5.com/tv-shows/details/roj-hoyi-bhoj-season-3/0-6-2023"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1067/list/061067list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/sa-re-ga-ma-pa-2018/0-6-1067"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2795/list/1170x658withlogo955491603.jpg",
-        url: "https://www.zee5.com/tv-shows/details/sa-re-ga-ma-pa-challenge-2009/0-6-2795"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2794/list/1170x658withlogo23052020.jpg",
-        url: "https://www.zee5.com/tv-shows/details/sa-re-ga-ma-pa-challenge-2005/0-6-2794"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1317/list/061317list.jpg",
-        url: "https://www.zee5.com/kids/kids-shows/sa-re-ga-ma-pa-lil-champs-2019/0-6-1317"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2758/list/1170x658withlog1214797727.jpg",
-        url: "https://www.zee5.com/tv-shows/details/sa-re-ga-ma-pa-singing-superstar-2010/0-6-2758"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2526/list/062526list.jpg",
-        url: "https://www.zee5.com/kids/kids-shows/sa-re-ga-ma-pa-lil-champs-2020/0-6-2526"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2358/list/062358list.jpg",
-        url: "https://www.zee5.com/web-series/details/skyfire/0-6-2358"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-3137/list/1170x658withlogofc5c649fb68d407fa5efab00b5e7106c.jpg",
-        url: "https://www.zee5.com/tv-shows/details/teri-meri-ikk-jindri/0-6-3137"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-tvshow_385599855/list/06tvshow3855991672032827.jpg",
-        url: "https://www.zee5.com/tv-shows/details/tujhse-hai-raabta/0-6-tvshow_385599855"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2442/list/1170x658withlog1629715051.jpg",
-        url: "https://www.zee5.com/tv-shows/details/umang-2017/0-6-2442"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1311/list/umang05022019111014925886.jpg",
-        url: "https://www.zee5.com/tv-shows/details/umang-2019/0-6-1311"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2799/list/1170x658withlog2051744991.jpg",
-        url: "https://www.zee5.com/tv-shows/details/vishnu-puran/0-6-2799"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-tvshow_826525818/list/1170x658withlogo032d8459afdf43e2ba6936926258f799.jpg",
-        url: "https://www.zee5.com/tv-shows/details/yeh-teri-galiyan/0-6-tvshow_826525818"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-1385/list/1170x65811656668883.jpg",
-        url: "https://www.zee5.com/tv-shows/details/zee-cine-awards-2019/0-6-1385"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2524/list/1170x658withlogo777429992.jpg",
-        url: "https://www.zee5.com/tv-shows/details/zee-cine-awards-2020/0-6-2524"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-3420/list/063420list.jpg",
-        url: "https://www.zee5.com/tv-shows/details/zee-comedy-show/0-6-3420"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-2248/list/1170x658withlogo309587623.jpg",
-        url: "https://www.zee5.com/tv-shows/details/zee-rishtey-awards-2019/0-6-2248"
-    },
-    {
-        image: "https://akamaividz2.zee5.com/image/upload/w_716,h_403,c_scale,f_auto,q_auto:eco/resources/0-6-3125/list/1170x658withlog1845120365.jpg",
-        url: "https://www.zee5.com/tv-shows/details/zee-rishtey-awards-2020/0-6-3125"
+        image: "https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_auto,q_auto:eco/resources/0-6-4z5172328/portrait/1920x77024a217a8ed9f465eb6a2e48d980d1b6d.jpg",
+        url: "https://www.zee5.com/global/web-series/details/maa-neella-tank/0-6-4z5172328"
     }
 ];
-dataTVshow.forEach(function(ele) {
+
+Data.forEach(function(ele) {
     let div = document.createElement("div");
     let image = document.createElement("img");
     image.setAttribute("src", ele.image);
 
+
     div.append(image);
-    document.querySelector("#container").append(div);
+    document.querySelector("#sony").append(div);
+});
+
+
+
+
+
+let selection1 = [{
+        image: "https://akamaividz2.zee5.com/image/upload/w_350,h_197,c_scale,f_auto,q_auto:eco/resources/0-1-6z5183360/list/00000172756195c558764c0a88ce9546056e27e9.jpg",
+        url1: "https://www.zee5.com/tv-shows/details/mithai/0-6-4z5101301/will-mithai-go-to-jail/0-1-6z5183360",
+        section2: "Mithai",
+        section3: "E88 : 19 jul",
+        selection2_url: "https://www.zee5.com/tv-shows/details/mithai/0-6-4z5101301/will-mithai-go-to-jail/0-1-6z5183360"
+    },
+    {
+        image: "https://akamaividz2.zee5.com/image/upload/w_350,h_197,c_scale,f_auto,q_auto:eco/resources/0-1-6z5183430/list/000002492d025ea681e848db9579cdc459bb65e5.jpg",
+        url1: "https://www.zee5.com/tv-shows/details/bhagya-lakshmi/0-6-3392/balwinder-is-locked-in-the-bathroom/0-1-6z5183430",
+        section2: "Bhagya Lakshmi",
+        section3: "E90 : 20 jul",
+        selection2_url: "https://www.zee5.com/tv-shows/details/bhagya-lakshmi/0-6-3392/balwinder-is-locked-in-the-bathroom/0-1-6z5183430"
+    },
+    {
+        image: "https://akamaividz2.zee5.com/image/upload/w_350,h_197,c_scale,f_auto,q_auto:eco/resources/0-1-6z5183328/list/00000101a840c45ee8294d1da737c1ad4740fdf1.jpg",
+        url1: "https://www.zee5.com/tv-shows/details/kundali-bhagya/0-6-366/kundali-bhagya-july-21-2022/0-1-6z5183328",
+        section2: "Kundali Bhagya",
+        section3: "E93 : 21 jul",
+        selection2_url: "https://www.zee5.com/tv-shows/details/kundali-bhagya/0-6-366/kundali-bhagya-july-21-2022/0-1-6z5183328"
+    },
+    {
+        image: "https://akamaividz2.zee5.com/image/upload/w_350,h_197,c_scale,f_auto,q_auto:eco/resources/0-1-6z5183435/list/00000022a91feb43877c48a6b299fc99b5606cb5.jpg",
+        url1: "https://www.zee5.com/tv-shows/details/kumkum-bhagya/0-6-127/pallavi-apologises-to-prachi/0-1-6z5183435",
+        section2: "Kumkum Bhagya",
+        section3: "E95 : 22 jul",
+        selection2_url: "https://www.zee5.com/tv-shows/details/kumkum-bhagya/0-6-127/pallavi-apologises-to-prachi/0-1-6z5183435"
+    }
+];
+
+selection1.forEach(function(ele) {
+    let div = document.createElement("div");
+    let image = document.createElement("img");
+    image.setAttribute("src", ele.image);
+    let para = document.createElement("p");
+    para.innerText = ele.section2;
+    let para2 = document.createElement("p");
+    para2.innerText = ele.section3;
+
+    div.append(image, para, para2);
+    document.querySelector("#epi").append(div);
+});
+
+
+
+let actors = [{
+        Aimage: "https://akamaividz2.zee5.com/image/upload/w_204,h_204,c_scale,f_auto,q_auto:eco/resources/0-8-6488/square/salmankhanfeaturedcelebsimagery1170x65809062022625a938fb39847fcad83c27afbcf457c.jpg",
+        "url": "https://www.zee5.com/collections/salman-khan/0-8-6488",
+        Aname: "Salman Khan",
+        "selection2_url": "https://www.zee5.com/collections/salman-khan/0-8-6488"
+    },
+    {
+        Aimage: "https://akamaividz2.zee5.com/image/upload/w_204,h_204,c_scale,f_auto,q_auto:eco/resources/0-8-3465/square/kanganaranaut_11_740919463.jpg",
+        "url": "https://www.zee5.com/collections/kangana-ranaut/0-8-3465",
+        Aname: "Kangana Ranaut",
+        "selection2_url": "https://www.zee5.com/collections/kangana-ranaut/0-8-3465"
+    },
+    {
+        Aimage: "https://akamaividz2.zee5.com/image/upload/w_204,h_204,c_scale,f_auto,q_auto:eco/resources/0-8-8267/square/vikrantmasseyplatformcreta.jpg",
+        "url": "https://www.zee5.com/collections/vikrant-massey/0-8-8267",
+        Aname: "Vikrant Massey",
+        "selection2_url": "https://www.zee5.com/collections/vikrant-massey/0-8-8267"
+    },
+
+    {
+        Aimage: "https://akamaividz2.zee5.com/image/upload/w_204,h_204,c_scale,f_auto,q_auto:eco/resources/0-8-2726/square/amitabhbacchan1943871325943d09c20f4de05425fad88119ceae03f2a.jpg",
+        "url": "https://www.zee5.com/collections/amitabh-bachchan/0-8-2726",
+        Aname: "Amitabh Bachchan",
+        "selection2_url": "https://www.zee5.com/collections/amitabh-bachchan/0-8-2726"
+    },
+
+];
+
+
+actors.forEach(function(ele) {
+    let div = document.createElement("div");
+    let image0 = document.createElement("img");
+    image0.setAttribute("src", ele.Aimage);
+
+    let para = document.createElement("p");
+    para.innerText = ele.Aname;
+
+
+    div.append(image0, para);
+    document.querySelector("#actor").append(div);
 });
