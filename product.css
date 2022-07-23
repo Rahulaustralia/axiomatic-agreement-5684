@@ -1,0 +1,30 @@
+#mid-first {
+    width: 70%;
+    margin: auto;
+}
+
+#mid-first>div img {
+    width: 100%;
+    height: 400px;
+    margin-top: 70px;
+}
+
+#mid-first button {
+    position: absolute;
+    top: 40%;
+    width: 4%;
+    height: 8%;
+    margin: 0px 8%;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+#mid-first button:nth-child(2) {
+    left: 1%;
+}
+
+#mid-first button:nth-child(3) {
+    right: 1%;
+}
