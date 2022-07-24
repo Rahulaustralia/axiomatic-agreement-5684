@@ -1,5 +1,9 @@
+body {
+    background-color: #0f0617;
+}
+
 #mid-first {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -7,6 +11,7 @@
     width: 100%;
     height: 400px;
     margin-top: 70px;
+    margin: auto;
 }
 
 #mid-first button {
@@ -16,7 +21,7 @@
     height: 8%;
     margin: 0px 8%;
     font-size: 40px;
-    color: white;
+    color: black;
     font-weight: bold;
     border: none;
 }
@@ -27,4 +32,88 @@
 
 #mid-first button:nth-child(3) {
     right: 1%;
+}
+
+#navbar {
+    display: flex;
+    background-color: #0f0617;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0px;
+    padding: 13px;
+}
+
+#left {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    align-items: center;
+    margin: auto;
+}
+
+#left>img {
+    width: 45px;
+}
+
+#left>a {
+    color: white;
+    text-decoration: none;
+}
+
+#right {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+input[type="text"] {
+    width: 250px;
+    height: 38px;
+    padding: 0px 4px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+#right button {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+input+button+button {
+    background-color: #8230c6;
+    font-weight: bold;
+    color: white;
+}
+
+input+button {
+    background-color: #0f0617;
+    color: white;
+    border: 1px solid white;
+}
+
+.line>div {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.line {
+    padding-top: 7px;
+}
+
+#image {
+    width: 100%;
+    height: 50px;
+}
+
+#image img {
+    width: 100%;
+    margin-top: 70px;
+    height: 300px;
 }

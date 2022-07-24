@@ -2,7 +2,7 @@ let container = document.getElementById("container");
 // let filtered=document.getElementById("filter");
 let cartLs = JSON.parse(localStorage.getItem("Mens-page")) || [];
 
-let totalcart = document.getElementById("total-cart");
+// let totalcart = document.getElementById("total-cart");
 
 function Display(mensData) {
 
@@ -17,19 +17,13 @@ function Display(mensData) {
         let img = document.createElement("img");
         img.src = ele.image_url;
 
-        let name = document.createElement("p");
-        name.innerText = ele.name;
 
-        let price = document.createElement("h4");
-        price.innerText = "MRP:-" + ele.price;
 
-        let cart = document.createElement("button");
-        cart.innerText = "Delete";
         cart.addEventListener("click", function() {
             DeleteCart(index);
         });
 
-        product.append(img, name, price, cart);
+        product.append(img);
         container.append(product);
 
     });
